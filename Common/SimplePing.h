@@ -10,6 +10,9 @@
 
 #include <AssertMacros.h>           // for __Check_Compile_Time
 
+//From https://gist.github.com/mlsteele/16dc5b6eb3d112b914183928c9af71b8
+#include <sys/_types/_sa_family_t.h>    // Fix for the "Declaration of 'sa_family_t' must be imported from module 'Darwin.POSIX.sys.types._sa_family_t' before it is required" error 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol SimplePingDelegate;
